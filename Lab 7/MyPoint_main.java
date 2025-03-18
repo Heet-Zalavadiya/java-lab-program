@@ -30,8 +30,9 @@ class MyPoint {
         this.x = x;
         this.y = y;
     }
-    int distance(){
-        
+    double distance(MyPoint p){
+        double ans = Math.sqrt(Math.pow(x-p.x,2)+Math.pow(y-p.y, 2));
+        return ans;
     }
 }
 

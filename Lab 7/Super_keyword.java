@@ -1,10 +1,17 @@
 class A{
     int a = 10;
-    A(){
-
+    A(int a){
+        this.a =a;
     }
 }
-
+class B extends A{
+    int a = 11;
+   
+    B(int a){
+        this.a =a;
+    }
+    System.out.println(this.a + " " +super.a);
+}
 
 
 
