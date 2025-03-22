@@ -35,9 +35,26 @@ class MyPoint {
         return ans;
     }
 }
-
+class ThreeDPoint extends MyPoint{
+    short z;
+    ThreeDPoint(){
+        super();
+        this.z = 0;
+    }
+    ThreeDPoint(short x,short y,short z){
+        super(x,y);
+        this.z = z;
+    }
+    double distance(ThreeDPoint p){
+        double ans = Math.sqrt(Math.pow(x-p.x,2)+Math.pow(y-p.y, 2)+Math.pow(z-p.z, 2));
+        return ans;
+    }
+}
 public class MyPoint_main {
     public static void main(String[] args) {
+        ThreeDPoint p1 = new ThreeDPoint((short)0,(short)0,(short)0);
+        ThreeDPoint p2 = new ThreeDPoint((short)10,(short)30,(short)25);
+        System.out.println("Distance between p1 and p2 is: "+p1.distance(p2));
 
     }
 }
