@@ -4,8 +4,6 @@
 // usage of dynamic method dispatch (dynamic polymorphism) to display book or paper 
 // publications of given author.Use command line arguments for input data.
 
-import java.util.Scanner;
-
 class Book {
     private String author_name;
 
